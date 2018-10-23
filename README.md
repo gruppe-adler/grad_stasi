@@ -1,2 +1,1 @@
-Hier ist Nix
-How about no?
+Hier ist Nix!
