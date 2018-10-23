@@ -6,11 +6,10 @@ class CfgPatches {
         units[] = {"ACE_envelope_small","ACE_envelope_big"};
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
-        requiredAddons[] = { QMAINPATCH, "ace_mic" };
-        authors[] = { "Salbei", "chris579" };
+        requiredAddons[] = { QMAINPATCH};
+        authors[] = { "Salbei"};
         VERSION_CONFIG;
     };
 };
 
-#include <CfgVehicles.hpp>
 #include <CfgWeapons.hpp>
