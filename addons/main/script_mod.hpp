@@ -1,5 +1,5 @@
 #define MAINPREFIX x
-#define PREFIX grad_mic
+#define PREFIX grad_stasi
 
 #include "script_version.hpp"
 

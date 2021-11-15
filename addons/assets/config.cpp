@@ -3,13 +3,15 @@
 class CfgPatches {
     class ADDON {
         name = QUOTE(ADDON);
-        units[] = {"ACE_envelope_small","ACE_envelope_big"};
+        units[] = {};
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = { QMAINPATCH};
-        authors[] = { "Salbei"};
+        authors[] = { "Salbei", "nomisum"};
         VERSION_CONFIG;
     };
 };
 
+#include <CfgRsc.hpp>
+#include <CfgMagazines.hpp>
 #include <CfgWeapons.hpp>
