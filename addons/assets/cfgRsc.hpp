@@ -14,7 +14,7 @@ class RscInGameUI
     class GRAD_stasi_rscOptics_mic: RscWeaponZeroing
     {
         idd = 300;
-        onLoad="['onLoad',_this,'RscUnitInfo','IGUI'] call (uinamespace getvariable 'BIS_fnc_initDisplay'); _this call GRAD_stasi_fnc_handler_mic;";
+        onLoad="['onLoad',_this,'RscUnitInfo','IGUI'] call (uinamespace getvariable 'BIS_fnc_initDisplay'); _this call GRAD_stasi_fnc_shotGunMic;";
         controls[] = {"CA_IGUI_elements_group"};
         class CA_IGUI_elements_group: RscControlsGroup
         {

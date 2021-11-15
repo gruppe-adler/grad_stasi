@@ -5,13 +5,14 @@ class CfgPatches {
         name = QUOTE(ADDON);
         units[] = {};
         weapons[] = {};
-        requiredVersion = REQUIRED_VERSION;
-        requiredAddons[] = { QMAINPATCH};
+        requiredVersion = 0.1;
+        requiredAddons[] = {};
         authors[] = { "Salbei", "nomisum"};
-        VERSION_CONFIG;
     };
 };
 
-#include <CfgRsc.hpp>
-#include <CfgMagazines.hpp>
-#include <CfgWeapons.hpp>
+#include <cfgRsc.hpp>
+#include <cfgMagazines.hpp>
+#include <cfgWeapons.hpp>
+#include <cfgFunctions.hpp>
+#include <cfgSounds.hpp>

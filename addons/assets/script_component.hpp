@@ -1,3 +1,3 @@
 #define COMPONENT assets
-#include "\x\grad_stasi\addons\main\script_mod.hpp"
-#include "\x\grad_stasi\addons\main\script_macros.hpp"
+#include "..\main\script_mod.hpp"
+#include "..\main\script_macros.hpp"
