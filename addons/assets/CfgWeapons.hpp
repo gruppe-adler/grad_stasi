@@ -22,9 +22,9 @@ class cfgWeapons {
         displaynameShort = "Handheld Mic";
         descriptionShort = "Handheld Mic";
 
-        model = "grad_stasi\addons\assets\data\models\mic.p3d";
-        picture="grad_stasi\addons\assets\data\textures\mic.paa";
-        UiPicture="grad_stasi\addons\assets\data\textures\mic.paa";
+        model = "\grad_stasi\assets\data\models\mic.p3d";
+        picture="\grad_stasi\assets\data\textures\mic.paa";
+        UiPicture="\grad_stasi\assets\data\textures\mic.paa";
 
         optics=0;
         weaponInfoType = "GRAD_stasi_rscOptics_mic";
