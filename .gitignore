@@ -1,5 +1,12 @@
-release/**
+releases/*
+build_keys/*
+keys/*
+.hemtt/local
+/a3/
+/x/
 
 *.pbo
 *.cache
 *.biprivatekey
+*.blend
+*.blend1
