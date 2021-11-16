@@ -21,10 +21,9 @@ class cfgWeapons {
         displayName = "Directional Mic";
         displaynameShort = "Handheld Mic";
         descriptionShort = "Handheld Mic";
-
-        model = "\x\grad_stasi\assets\data\models\mic.p3d";
-        picture="\x\grad_stasi\assets\data\textures\mic.paa";
-        UiPicture="\x\grad_stasi\assets\data\textures\mic.paa";
+        model = "\x\grad_stasi\addons\assets\data\models\mic.p3d";
+        picture="\x\grad_stasi\addons\assets\data\textures\mic.paa";
+        UiPicture="\x\grad_stasi\addons\assets\data\textures\mic.paa";
 
         optics=0;
         weaponInfoType = "GRAD_stasi_rscOptics_mic";
