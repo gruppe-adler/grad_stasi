@@ -5,9 +5,9 @@ private _workShopClass = "Land_WeldingTrolley_01_F";
 
 // 10% chance to find tracker without workshop, 70% chance to find with workshop
 private _chanceForSuccess = if (isNull (nearestObject [position player, _workShopClass])) then {
-	0.1	
+    0.1	
 } else {
-	0.7
+    0.7
 };
 
 
@@ -20,14 +20,14 @@ private _timeToSearch = if (_isRevealed) then { GRAD_STASI_CHECKTRACKER_FAST } e
 // progressbar
 [_timeToSearch, [_vehicle, _chanceForSuccess, _isRevealed], {
     _this params ["_args"];
-	_args params ["_vehicle", "_chanceForSuccess", "_isRevealed"];
+    _args params ["_vehicle", "_chanceForSuccess", "_isRevealed"];
     
-	[_vehicle, _chanceForSuccess, _isRevealed] call GRAD_stasi_fnc_checkVehicleResult;
+    [_vehicle, _chanceForSuccess, _isRevealed] call GRAD_stasi_fnc_checkVehicleResult;
 
 }, {
-	hint "Aborted checking Vehicle";
+    hint "Aborted checking Vehicle";
 }, 
-	"Checking Vehicle for Tracking Devices", 
-	{true}, 
-	["isNotSwimming", "isNotInside", "notOnMap", "isNotSitting"]
+    "Checking Vehicle for Tracking Devices", 
+    {true}, 
+    ["isNotSwimming", "isNotInside", "notOnMap", "isNotSitting"]
 ] call ace_common_fnc_progressBar;
