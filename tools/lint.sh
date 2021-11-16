@@ -34,7 +34,7 @@ else
     pushd ${PROJECTDIR}
 fi
 
-${THISDIR}/preprocess.sh -d ${BUILDDIR} -p
+bash ${THISDIR}/preprocess.sh -d ${BUILDDIR} -p
 EXITCODE=$?
 if [[ ${EXITCODE} != 0 ]]; then popd; exit ${EXITCODE}; fi
 
