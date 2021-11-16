@@ -26,9 +26,6 @@ class cfgWeapons {
         picture="grad_stasi\addons\assets\data\textures\mic.paa";
         UiPicture="grad_stasi\addons\assets\data\textures\mic.paa";
 
-        /* anim from RDS - todo replace with custom one */
-        handAnim[]= {"OFP2_ManSkeleton","grad_stasi\addons\assets\anims\GRAD_stasi_mic.rtm"};
-
         optics=0;
         weaponInfoType = "GRAD_stasi_rscOptics_mic";
 
