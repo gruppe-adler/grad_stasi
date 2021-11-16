@@ -6,8 +6,8 @@ class CfgPatches {
         units[] = {};
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
-        requiredAddons[] = { "tfar_core" };
-        authors[] = { "Salbei", "nomisum"};
+        requiredAddons[] = { "ace_trenches" };
+        authors[] = { "Salbei", "chris579" };
         VERSION_CONFIG;
     };
 };

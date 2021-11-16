@@ -1,12 +1,9 @@
-name = "GRAD Trenches"
+name = "GRAD Stasi"
 prefix = "grad_stasi"
-author = "Salbei"
+author = "nomisum, Salbei"
 files = [
     "mod.cpp",
-    "logo_active_ca.paa",
-    "logo_ca.paa",
-    "overview_co.paa",
-    "logo_small_ca.paa",
+    "logo_grad_ca.paa",
     "LICENSE",
     "README.md"
 ]
