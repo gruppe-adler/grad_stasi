@@ -21,7 +21,7 @@ class cfgWeapons {
         displayName = "Directional Mic";
         displaynameShort = "Handheld Mic";
         descriptionShort = "Handheld Mic";
-        model = "\x\grad_stasi\addons\assets\data\models\mic.p3d";
+        model = "\x\grad_stasi\addons\assets\data\models\mic_nomi.p3d";
         picture="\x\grad_stasi\addons\assets\data\textures\mic.paa";
         UiPicture="\x\grad_stasi\addons\assets\data\textures\mic.paa";
 

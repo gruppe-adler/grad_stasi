@@ -14,5 +14,4 @@ class CfgPatches {
 #include <cfgRsc.hpp>
 #include <cfgMagazines.hpp>
 #include <cfgWeapons.hpp>
-#include <cfgFunctions.hpp>
 #include <cfgSounds.hpp>

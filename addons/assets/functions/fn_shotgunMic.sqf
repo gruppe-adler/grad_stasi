@@ -1,3 +1,5 @@
+#include "..\script_component.hpp"
+
 params ["_unit"];
 
 player setVariable ["GRAD_shotgunMicActive", true];
@@ -8,11 +10,11 @@ private _objectCache = objNull;
 
 missionNamespace setVariable ["GRAD_stasi_micPoint", _debugObject];
 
-[] call GRAD_stasi_fnc_createShotgunMicInterface;
+[] call FUNC(createShotgunMicInterface);
 
 private _mouseWheelEH = (findDisplay 46) displayAddEventHandler [
       "MouseZChanged",
-      "_this call GRAD_stasi_fnc_interpretMouseWheel"
+      "_this call GRAD_stasi_assets_fnc_interpretMouseWheel"
 ];
 
 
@@ -32,8 +34,9 @@ private _mouseWheelEH = (findDisplay 46) displayAddEventHandler [
     };
 
     // max range 150
+    private _maxRange = missionNamespace getVariable ["GRAD_STASI_MIC_MAX_DISTANCE", 150];
     private _humanEye = positionCameraToWorld [0,0,0];
-    private _aimVector = ((getCameraViewDirection player) vectorMultiply GRAD_STASI_MIC_CURRENT_DISTANCE);
+    private _aimVector = ((getCameraViewDirection player) vectorMultiply _maxRange);
     private _eyeTargetInRange = _humanEye vectorAdd _aimVector;
 
     private _earDropTarget = [0,0,0];
@@ -47,9 +50,10 @@ private _mouseWheelEH = (findDisplay 46) displayAddEventHandler [
     // private _isObjectTarget = count _objectTarget > 0;
 
     private _cursorObject = cursorObject;
+    private _currentDistance = missionNamespace getVariable ["GRAD_STASI_MIC_CURRENT_DISTANCE", 150];
     private _objectCache = missionNamespace getVariable ["GRAD_stasi_shotgunMicObjectCache", objNull];
     if (_cursorObject isKindOf "Man" && 
-        _cursorObject distance player < GRAD_STASI_MIC_CURRENT_DISTANCE
+        _cursorObject distance player < _currentDistance
         ) then {
         private _objectCache = missionNamespace setVariable ["GRAD_stasi_shotgunMicObjectCache", cursorObject];
         if (random 2 > 1.9) then {
