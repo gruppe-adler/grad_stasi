@@ -1,4 +1,3 @@
-
 class cfgWeapons {
 
     /*extern*/ class SlotInfo;

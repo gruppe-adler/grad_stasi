@@ -13,6 +13,6 @@ class CfgPatches {
 
 #include <cfgRsc.hpp>
 #include <cfgMagazines.hpp>
-#include <cfgWeapons.hpp>
+#include <CfgWeapons.hpp>
 #include <cfgFunctions.hpp>
 #include <cfgSounds.hpp>
